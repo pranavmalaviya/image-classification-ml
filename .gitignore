@@ -1,3 +1,6 @@
+# Ignore MEDIA_ROOT images
+media/testImages/*
+
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[cod]
