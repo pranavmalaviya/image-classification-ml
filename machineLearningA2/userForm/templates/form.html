@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<head>
+    <title>Upload Form Page</title>
+
+    <!-- Stylesheets from https://getmdl.io/started/index.html -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="https://code.getmdl.io/1.3.0/material.indigo-pink.min.css">
+    <script defer src="https://code.getmdl.io/1.3.0/material.min.js"></script>
+
+    <!-- Import Roboto Font -->
+    <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Roboto:300,400,500,700" type="text/css">
+
+    <!-- MDL Layout from https://getmdl.io/components/index.html#layout-section -->
+    <style>
+        .demo-layout-transparent {
+          background: url('https://machine-learning-assign2.s3-ap-southeast-2.amazonaws.com/brain.jpg') center / cover;
+        }
+        .demo-layout-transparent .mdl-layout__header,
+        .demo-layout-transparent {
+          color: white;
+        }
+        .mdl-layout__content {
+            color: white;
+            font-size: 18px;
+            margin: auto;
+            width: 80%;
+            height: 80%;
+            /* border: 2px solid white; */
+            padding: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="demo-layout-transparent mdl-layout mdl-js-layout">
+        <header class="mdl-layout__header mdl-layout__header--transparent">
+          <div class="mdl-layout__header-row">
+            <span class="mdl-layout-title">Machine Leaning Assign-2</span>
+            <div class="mdl-layout-spacer"></div>
+            <nav class="mdl-navigation">
+              <a class="mdl-navigation__link" href="#">Optional Link</a>
+            </nav>
+          </div>
+        </header>
+        <main class="mdl-layout__content">
+            {{ form }}
+        </main>
+      </div>
+</body>
+</html>
