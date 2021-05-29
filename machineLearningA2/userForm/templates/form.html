@@ -43,8 +43,18 @@
           </div>
         </header>
         <main class="mdl-layout__content">
-            {{ form }}
+            <form method="post" enctype="multipart/form-data">
+                {% csrf_token %}
+                {{ form.as_p }}
+                <button class="mdl-button mdl-js-button mdl-button--raised mdl-button--colored" type="submit">
+                    Upload
+                </button>
+            </form>
+              
+            {% if img_obj %}
+                <h3>Succesfully uploaded : {{ img_obj.title }}</h3>
+            {% endif %}
         </main>
-      </div>
+    </div>
 </body>
 </html>
