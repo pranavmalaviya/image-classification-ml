@@ -1,6 +1,24 @@
-# django-ui
+# Machine Learning - Assignment 2
 
-This repository is a part of RMIT University -> COSC2673 Machine Learning -> Assignment 2.
+An assignment for COSC2673 Machine Learning at RMIT University.
+
+## Project Background:
+
+Your task is to develop a machine learning system that can classify histopathelogy images of colon cells. A basic description of histopathelogy images can be found here.
+
+You will be using a modified version of the “CRCHistoPhenotypes” dataset for this task. The data set for you to use in this assignment has been specifically prepared for you, and is provided on Canvas. The dataset consists of 27x27 RGB images of colon cells from 99 different patients and you are expected to use the dataset to perform two tasks:
+
+- Classify images according to whether given cell image represents a cancerous cells or not (isCancerous).
+- Classify images according to cell-type, such as: fibroblast, inflammatory, epithelial or others.
+
+The correct classification of the images is given by the “data labels mainData.csv” and “data labels extraData.csv”. For the first 60 patients, the medical experts have provided labels isCancerous and cell-type. However for the remaining 39 patients, the medical experts have only provided labels for isCancerous.
+
+![image](https://user-images.githubusercontent.com/30822450/120934592-3e2f7a80-c742-11eb-9c42-889829c29425.png)
+
+**(a).** Example histopathelogy image of the colon with individual cells marked with “blue” rectangles of size 27x27.
+**(b).** Example of different cell types present in histopathelogy images of the colon.
+
+You can find more information about the project at `./Project_Specification.pdf` **Section 3.1.1 Classify Images of Colon Cancer**
 
 ## Dev set-up:
 
